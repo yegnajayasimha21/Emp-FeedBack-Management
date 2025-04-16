@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Feedback Analytics">
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_3-of-4 slds-p-around_medium">
+                <canvas lwc:dom="manual" class="chart"></canvas>
+            </div>
+            <div class="slds-col slds-size_1-of-4 slds-p-around_medium">
+                <template for:each={ratingLegend} for:item="item">
+                    <div key={item.rating} class="legend-item">
+                        <span class={item.colorClass}></span>
+                        <span class="legend-text">Rating {item.rating}</span>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>

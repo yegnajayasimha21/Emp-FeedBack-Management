@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Feedback Dashboard">
+        <div class="slds-p-around_medium">
+            <lightning-combobox 
+                label="Filter by Rating"
+                value={selectedRating}
+                options={ratingOptions}
+                onchange={handleFilterChange}
+                placeholder="Select Rating">
+            </lightning-combobox>
+
+            <lightning-datatable 
+                key-field="Id" 
+                data={feedbackRecords} 
+                columns={columns}
+                sorted-by={sortedBy}
+                sorted-direction={sortedDirection}
+                onsort={handleSort}
+                hide-checkbox-column="true">
+            </lightning-datatable>
+
+        </div>
+    </lightning-card>
+</template>

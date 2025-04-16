@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Feedback Management">
+        <c-feed-back-form onfeedbacksubmitted={handleFeedbackSubmitted}></c-feed-back-form>
+    </lightning-card>
+
+    <div class="slds-m-top_medium">
+        <c-feedback-dashboard key={refreshKey}></c-feedback-dashboard>
+    </div>
+
+    <div class="slds-m-top_medium">
+        <c-feedback-analytics></c-feedback-analytics>
+    </div>
+</template>

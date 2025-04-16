@@ -1,0 +1,21 @@
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* Define Specific Colors */
+.legend-green { background-color: green; }
+.legend-red { background-color: red; }
+.legend-yellow { background-color: yellow; }
+.legend-blue { background-color: blue; }
+.legend-purple { background-color: purple; }
+.legend-default { background-color: gray; }
